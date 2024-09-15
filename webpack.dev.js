@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: 'development',
   devServer: {
     static: './dist',
-    hot: true,
+    hot: true, // Hot Module Replacement
     open: true,
     port: 3000,
   },
