@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"AAAAA,MAAM,+BACHC,MAAKC,GAAYA,EAASC,SAC1BF,MAAKG,GAAQC,QAAQC,IAAIF","sources":["webpack://module_e13/./src/index.js"],"sourcesContent":["fetch('http://localhost:3001/posts')\n  .then(response => response.json())\n  .then(data => console.log(data));"],"names":["fetch","then","response","json","data","console","log"],"sourceRoot":""}
