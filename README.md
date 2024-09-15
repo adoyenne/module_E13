@@ -9,56 +9,48 @@
    ```bash
    git clone <URL-вашего-репозитория>
    cd <директория-проекта>
-Установите зависимости Node.js:
 
-bash
-Copy code
-npm install
-Установите зависимости Python:
+2. **Установите зависимости Node.js:**
 
-Создайте виртуальную среду (если еще не создана):
+   npm install
 
-bash
-Copy code
-python -m venv venv
-Активируйте виртуальную среду:
+3. **Установите зависимости Python:**
 
-На macOS/Linux:
+   #Создайте виртуальную среду (если еще не создана):
 
-bash
-Copy code
-source venv/bin/activate
-На Windows:
 
-bash
-Copy code
-venv\Scripts\activate
-Установите зависимости из requirements.txt:
+   python -m venv venv
+   #Активируйте виртуальную среду:
 
-bash
-Copy code
-pip install -r requirements.txt
-Команды
-Node.js
-Запуск сервера разработки с HMR:
+   #На macOS/Linux:
+   source venv/bin/activate
+   #На Windows:
 
-bash
-Copy code
-npm run dev
+
+   venv\Scripts\activate
+
+   #Установите зависимости из requirements.txt:
+
+   pip install -r requirements.txt
+
+4.  **Запуск сервера разработки с HMR: **
+
+    npm run dev
+
+   
 Это запустит Webpack Dev Server с поддержкой Hot Module Replacement (HMR) на порту 3000.
 
-Сборка проекта для продакшена:
+5. **Сборка проекта для продакшена:**
 
-bash
-Copy code
-npm run build
+   npm run build
+
 Это соберет проект в режиме продакшена и создаст оптимизированные файлы в папке dist.
 
-Запуск JSON-server:
+6. **Запуск JSON-server:**
 
-bash
-Copy code
-npm run json-server
+
+   npm run json-server
+
 Это запустит JSON-server, который будет слушать на порту 3001.
 
 Python
@@ -66,14 +58,14 @@ Python
 
 Например, если у вас есть серверный скрипт на Flask, запустите его с помощью:
 
-bash
-Copy code
 python server.py
+
 Конфигурация
 Webpack:
 
 webpack.dev.js: Конфигурация для разработки, включает HMR.
 webpack.prod.js: Конфигурация для продакшена, без HMR.
+
 JSON-server:
 
 Файл db.json содержит начальные данные для JSON-server.
